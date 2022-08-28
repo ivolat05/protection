@@ -12,7 +12,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-	<title>Legal Service</title>
+	<title>Защита в суде</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
@@ -25,32 +25,30 @@
 
 <body>
 	<div class="page d-flex flex-column">
-		<header id="header" class="header position-relative">
+		<header class="header">
 			<div class="container header-container">
-				<div class="header-wrapp d-flex justify-content-between  align-items-center">
-					<div class="logo d-flex  align-items-center justify-content-start">
-						<img src="./assets/img/logo.png" alt="" class="logo-img">
-						<div class="logo-text d-none d-lg-flex flex-column align-items-start">
-							Юридическая компания «Legal Services». <span>
-								Работаем по всей РФ.
-							</span>
+				<div class="header-wrapp d-flex align-items-center justify-content-between">
+					<a href="#" aria-label="logo" class="logo">
+						<img width="110" height="85" src="./assets/img/header/logo.svg" alt="" class="header-logo-img">
+					</a>
+					<div class="header-coll d-flex alig-items-center justify-content-between">
+						<div class="header-map d-flex justify-content-start align-items-start">
+							<img width="30" height="30" src="./assets/img/header/mark.svg" alt="" class="header-map-img">
+							<div class="header-map-coll">
+								<div class="header-map-row">
+									<span class="header-map-span">
+										г. Краснодар,
+									</span>
+									ул. Севастопольская 2/3
+									возле 2 подъезда (вход в цоколь)
+								</div>
+								<a href="#" aria-label="Показать на карте" class="header-map-link">
+									Показать на карте
+								</a>
+							</div>
 						</div>
-					</div>
-		
-					<div
-						class="header-page  d-flex flex-lg-row flex-column justify-content-end align-items-lg-center align-items-start">
-						<button
-							class="header-menu-close --close d-lg-none d-flex justify-content-center align-items-center position-absolute">
-							<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M24 24L2 2" stroke="#000" stroke-width="3" stroke-linecap="round"
-									stroke-linejoin="round" />
-								<path d="M2 24L24 2" stroke="#000" stroke-width="3" stroke-linecap="round"
-									stroke-linejoin="round" />
-							</svg>
-						</button>
-						<nav class="header-nav d-block d-lg-none ">
-							<ul
-								class="header-list d-flex flex-lg-row flex-column justify-content-between  align-items-lg-center align-items-start">
+						<nav class="header-nav d-none ">
+							<ul class="header-list">
 								<li class="header-list-inner">
 									<a href="#case" class="header-list-link --close scroll-link">
 										Услуги
@@ -73,75 +71,229 @@
 								</li>
 							</ul>
 						</nav>
-						<div class="header-mess-coll">
-							<h3 class="header-mess-title pb-2">
+						<div class="header-mess">
+							<div class="header-mess-title">
 								Написать в мессенджер:
-							</h3>
-							<div class="header-mess-box">
-								<a href="#" class="heder-mess-link --close">
-									<img src="./assets/img/tell.svg" alt="">
+							</div>
+							<div class="header-mess-row d-flex justify-content-end align-items-center">
+								<a href="#"
+									class="header-mess-link --telegramm  d-flex align-items-center justify-content-center">
+									<svg class="header-mess-svg" width="22" height="18" viewBox="0 0 22 18" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M20.1244 0.158909C20.1244 0.158909 22.1596 -0.620233 21.99 1.27197C21.9335 2.05112 21.4247 4.77812 21.029 7.72775L19.6722 16.4653C19.6722 16.4653 19.5591 17.7453 18.5415 17.9679C17.5239 18.1905 15.9976 17.1888 15.7149 16.9662C15.4888 16.7992 11.475 14.2948 10.0617 13.0705C9.66595 12.7365 9.21369 12.0687 10.1182 11.2895L16.0541 5.72425C16.7325 5.0564 17.4109 3.49812 14.5843 5.39033L6.66975 10.6774C6.66975 10.6774 5.76524 11.2339 4.0693 10.733L0.39468 9.61997C0.39468 9.61997 -0.962098 8.78518 1.35573 7.95034C7.00897 5.33463 13.9624 2.66328 20.1244 0.158909Z"
+											fill="white" />
+									</svg>
 								</a>
-								<a href="#" class="heder-mess-link --close">
-									<img src="./assets/img/watch.svg" alt="">
+								<a href="#" class="header-mess-link --mess  d-flex align-items-center justify-content-center">
+									<svg class="header-mess-svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M18.1406 14.9813C17.8302 14.8261 16.3083 14.0782 16.025 13.974C15.7417 13.8709 15.5354 13.8198 15.3281 14.1303C15.1219 14.4386 14.5292 15.1365 14.349 15.3428C14.1677 15.55 13.9875 15.575 13.6781 15.4209C13.3687 15.2646 12.3708 14.9386 11.1885 13.8844C10.2688 13.0636 9.64688 12.05 9.46667 11.7396C9.28646 11.4303 9.44687 11.2625 9.60208 11.1084C9.74167 10.9698 9.91146 10.7469 10.0667 10.5667C10.2219 10.3855 10.2729 10.2563 10.376 10.049C10.4802 9.84275 10.4281 9.66254 10.35 9.50733C10.2729 9.35213 9.65417 7.82817 9.39583 7.20838C9.14479 6.60525 8.88958 6.68754 8.7 6.67713C8.51875 6.66879 8.3125 6.66671 8.10625 6.66671C7.9 6.66671 7.56458 6.74379 7.28125 7.05421C6.99687 7.36358 6.19792 8.11254 6.19792 9.6365C6.19792 11.1594 7.30625 12.6313 7.46146 12.8386C7.61667 13.0448 9.64375 16.1719 12.749 17.5125C13.4885 17.8313 14.0646 18.0219 14.5135 18.1636C15.2552 18.4 15.9302 18.3667 16.4635 18.2865C17.0573 18.198 18.2948 17.5375 18.5531 16.8146C18.8104 16.0917 18.8104 15.4719 18.7333 15.3428C18.6562 15.2136 18.45 15.1365 18.1396 14.9813H18.1406ZM12.4927 22.6928H12.4885C10.6442 22.6931 8.83372 22.1973 7.24687 21.2573L6.87187 21.0344L2.97396 22.0573L4.01458 18.2573L3.76979 17.8678C2.73869 16.2264 2.19302 14.3269 2.19583 12.3886C2.19792 6.7115 6.81667 2.09275 12.4969 2.09275C15.2469 2.09275 17.8323 3.16567 19.776 5.1115C20.7348 6.06627 21.4947 7.20167 22.0117 8.45202C22.5288 9.70236 22.7929 11.0428 22.7885 12.3959C22.7865 18.073 18.1677 22.6928 12.4927 22.6928ZM21.2552 3.63338C20.1075 2.47809 18.7419 1.56206 17.2376 0.938376C15.7333 0.314692 14.1201 -0.00424609 12.4917 4.2685e-05C5.66458 4.2685e-05 0.10625 5.55733 0.104167 12.3875C0.101003 14.5612 0.671223 16.6973 1.75729 18.5803L0 25L6.56667 23.2771C8.3832 24.2668 10.4188 24.7854 12.4875 24.7855H12.4927C19.3198 24.7855 24.8781 19.2282 24.8802 12.3969C24.8852 10.7691 24.5675 9.1564 23.9452 7.65216C23.323 6.14792 22.4087 4.78199 21.2552 3.63338Z"
+											fill="white" />
+									</svg>
+		
 								</a>
-								<a href="#" class="heder-mess-link --close">
-									<img src="./assets/img/vk.svg" alt="">
+								<a href="#" class="header-mess-link --vk d-flex align-items-center justify-content-center">
+									<img src="./assets/img/header/vk.svg" alt="" class="header-mess-img">
 								</a>
 							</div>
 						</div>
-						<div class="header-contact">
-							<a href="tel:89280364099" class="header-link-tell --close d-block pb-lg-2 pb-3">
-								<span>
-									8 (928)
-								</span> 036-40-99
-							</a>
-							<a href="tel:88002227885" class="header-link-tell --close d-block">
-								<span>
-									8 (800)
-								</span>
-								222-78-85
-							</a>
-						</div>
 					</div>
-					<div class="d-flex align-items-center justify-content-end">
-						<a href="tel:88002227885" class="header-link-tell--mob d-lg-none d-block">
-							<span>
-								8 (800)
-							</span>
-							222-78-85
+		
+					<div class="header-tell d-flex align-items-center justify-content-end">
+						<a href="tel:89094665986" aria-label="8 (909) 466-59-86" class="header-tel-link">
+							<span class="header-tell-span">
+								8 (909)
+							</span> 466-59-86
 						</a>
-						<button class="header-menu-open d-lg-none d-flex justify-content-center align-items-center">
-							<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<rect width="10" height="1" fill="white" />
-								<rect y="3" width="10" height="1" fill="white" />
-								<rect y="6" width="10" height="1" fill="white" />
-							</svg>
-						</button>
+						<a href="tel:89094665986" aria-label="8 (909) 466-59-86"
+							class="header-tel-btn d-flex align-items-center justify-content-center">
+							<img src="./assets/img/header/tell.svg" alt="">
+						</a>
 					</div>
+		
+		
 				</div>
+		
 			</div>
 		</header>
 		<main class="main">
 			<div class="container">
-				<div class="main-row mx-auto d-flex flex-column align-items-center justify-content-end">
+				<div class="main-row mx-auto d-flex flex-column align-items-center justify-content-center">
 					<div class="main-wrapp  d-flex flex-column align-items-center justify-content-end">
 						<h1 class="main-title text-center">
-							Не согласны с экспертизой?
-							Оспорим ее. Изменим ход процесса в вашу пользу!
+							Защитим Ваши интересы в суде, поможем разрешить спор и повернуть ход дела в Вашу пользу
 						</h1>
 						<p class="main-text text-center">
-							Расходы включим в судебные издержки.
-							Документы отправим в любую точку РФ.
+							Вам не нужно посещать судебные заседания. Мы сделаем это за Вас.
 						</p>
 						<a href="#modal-widnow"
 							class="main-btn open-modal position-relative d-flex align-items-center justify-content-center">
-							Бесплатный анализ за 24 ч.
+							Бесплатная консультация
 						</a>
-		
+						<p class="main-subtext">
+							Получите <span class="mein-subtext-span">30-ти минутную бесплатную консультацию</span> по Вашей
+							ситуации
+						</p>
 					</div>
 				</div>
 			</div>
 		</main>
+		<section class="escort escort-padding">
+			<div class="container">
+				<h3 class="title escort-title text-center">
+					Юридическое сопровождение под ключ
+				</h3>
+				<div class="escort-wrapp d-flex justify-content-between flex-wrap">
+					<div class="escort-box ">
+						<div class="escort-box-container d-flex align-items-start justify-content-center">
+							<img src="./assets/img/escort/escort-1.svg" alt="" class="escort-box-img">
+						</div>
+						<h4 class="escort-box-title text-center">
+							Бесплатный анализ документов
+						</h4>
+						<p class="escort-box-text text-center">
+							Оценим законность, действительность и правовое значение документов. Определим перспективы дела.
+						</p>
+					</div>
+					<div class="escort-box ">
+						<div class="escort-box-container d-flex align-items-start justify-content-center">
+							<img src="./assets/img/escort/escort-2.svg" alt="" class="escort-box-img">
+						</div>
+		
+						<h4 class="escort-box-title text-center">
+							Бесплатная консультация
+						</h4>
+						<p class="escort-box-text text-center">
+							Составим первоначальный план действий, который поможет добиться результата.
+						</p>
+					</div>
+					<div class="escort-box ">
+						<div class="escort-box-container d-flex align-items-start justify-content-center">
+							<img src="./assets/img/escort/escort-3.svg" alt="" class="escort-box-img">
+						</div>
+						<h4 class="escort-box-title text-center">
+							Ведем дело под ключ
+						</h4>
+						<p class="escort-box-text text-center">
+							Сами подготавливаем документы и посещаем все судебные заседания до вынесения решения.
+						</p>
+					</div>
+					<div class="escort-box ">
+						<div class="escort-box-container d-flex align-items-start justify-content-center">
+							<img src="./assets/img/escort/escort-4.svg" alt="" class="escort-box-img">
+						</div>
+						<h4 class="escort-box-title text-center">
+							Без Вашего участия
+						</h4>
+						<p class="escort-box-text text-center">
+							Сбор документов, подготовка исков и заседания в суде, проводим с минимальным Вашим участием.
+						</p>
+					</div>
+					<div class="escort-box  ">
+						<div class="escort-box-container d-flex align-items-start justify-content-center">
+							<img src="./assets/img/escort/escort-5.svg" alt="" class="escort-box-img">
+						</div>
+						<h4 class="escort-box-title text-center">
+							Еженедельные отчеты
+						</h4>
+						<p class="escort-box-text text-center">
+							Отчитываемся по каждому изменению в ходе процесса любым удобным для Вас способом.
+						</p>
+					</div>
+					<div class="escort-box ">
+						<div class="escort-box-container d-flex align-items-start justify-content-center">
+							<img src="./assets/img/escort/escort-6.svg" alt="" class="escort-box-img">
+						</div>
+						<h4 class="escort-box-title text-center">
+							Поэтапная оплата
+						</h4>
+						<p class="escort-box-text text-center">
+							При необходимости можем <br> разбить сумму оплаты услуги <br>
+							на 3 части.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="situation situation-padding">
+			<div class="container">
+				<div class="situation-wrapp">
+					<div class="situation-coll">
+						<h3 class="situation-title">
+							Детально погружаемся в Вашу ситуацию
+						</h3>
+						<p class="situation-text">
+							Изучим документы по Вашей ситуации, предоставим исчерпывающую информацию, составим прогноз и рабочую
+							стратегию ведения дела в суде.
+						</p>
+						<p class="situation-quote">
+							Мы возьмем на себя весь процесс по защите Ваших интересов.
+						</p>
+						<p class="situation-subtext">
+							Вам остается только согласовывать наши действия и предоставлять нам информацию с Вашей стороны.
+						</p>
+					</div>
+					<div class="situation-box-img">
+						<img width="760" height="730" src="./assets/img/situation/situation.jpg" alt="" class="situation-img">
+					</div>
+					<a href="#" aria-label="Записаться на консультацию" class="button-shadow situation-btn open-modal">
+						<span>
+							Записаться на консультацию
+						</span>
+		
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="request">
+			<div class="container">
+				<div class="reguest-wrap">
+					<div class="reguest-head">
+						<img src="" alt="" class="reguest-img">
+						<div class="reguest-coll">
+							<h3 class="reguest-head-title">
+								Бесплатная консультация по защите прав в суде
+							</h3>
+							<p class="reguest-head-text">
+								Заполните форму и наши юристы ответят на любые вопросы,
+								расскажут о нюансах Вашего случая составят подробный план действий.
+							</p>
+						</div>
+					</div>
+					<form id="form-0" action="/" class="reguest-form">
+						<input type="text" name="name" class="reguest-input" placeholder="Ваше имя">
+						<input type="tel" name="phone" class="reguest-input mask-tell" placeholder="Ваш номер телефона">
+						<button type='submit' class="reguest-btn">
+							Записаться на консультацию
+						</button>
+					</form>
+					<div class="regust-subtext">
+						Нажимая на кнопку, вы соглашаетесь с
+						<a href="#" class="regust-link">
+							условиями
+							обработки данных и политикой конфиденцильности
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+	</div>
+	<div class="popup-success   mfp-hide" id="popup-success">
+		<div class="modal-window-title text-center">Ваша заявка <br> отправленна
+		</div>
+		<div class="modal-window-text text-center">Мы перезвоним Вам <br> в течении 10 минут
+		</div>
+		<button class="modal-btn-close popup-close">
+			<svg width="16" height="16" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M24 24L2 2" stroke="rgba(0,0,0,.2)" stroke-width="3" stroke-linecap="round"
+					stroke-linejoin="round"></path>
+				<path d="M2 24L24 2" stroke="rgba(0,0,0,.2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+				</path>
+			</svg>
+		</button>
 	</div>
 	<div class="fon"></div>
 	
