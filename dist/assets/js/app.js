@@ -42,16 +42,11 @@ $(function () {
 		mainClass: 'mfp-fade'
 	});
 
-	$('.foto-gallery').magnificPopup({
-		delegate: 'a',
+	$('.emplay-box-link').magnificPopup({
 		type: 'image',
 		mainClass: 'mfp-img',
 		tLoading: 'Загрузка изоброжения',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-		}
+
 	});
 
 
@@ -104,88 +99,22 @@ $(function () {
 	tabs("bookmark-btn", "bookmark-tab", "data-tab");
 
 	// slaider
-
-	$(".certificate-slaider").slick({
-		slidesToShow: 3,
+	$('.ofice-slaider-head').slick({
+		slidesToShow: 1,
 		slidesToScroll: 1,
-		dots: true,
-		infinite: false,
-		arrows: true,
-
-		nextArrow: $(".block__slick-next"),
-		prevArrow: $(".block__slick-prev"),
-
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					dots: false
-				}
-			},
-			{
-				breakpoint: 550,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					dots: false
-				}
-			}
-
-
-		]
+		dots: false,
+		arrows: false,
+		fade: true,
+		asNavFor: '.ofice-slaider-body'
 	});
-
-	$(".rev-slaider").slick({
-		slidesToShow: 2,
+	$('.ofice-slaider-body').slick({
+		slidesToShow: 4,
 		slidesToScroll: 1,
-		dots: true,
-		infinite: false,
-		arrows: true,
-		// rows - удоляет пустые div
-		rows: 0,
-		nextArrow: $(".rev__slick-next"),
-		prevArrow: $(".rev__slick-prev"),
-
-		responsive: [
-			{
-				breakpoint: 770,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					dots: false
-				}
-			}
-
-
-		]
+		asNavFor: '.ofice-slaider-head',
+		dots: false,
+		arrows: false,
+		focusOnSelect: true
 	});
-
-	// добоволения pdf файлв в модальное окно
-	function addPdf() {
-		let btn = document.querySelectorAll('.open-pdf-file');
-		if (btn) {
-			btn.forEach(item => {
-				item.addEventListener('click', () => {
-					let dataAtr = item.getAttribute('data-pdf');
-					$(`.${dataAtr} `).magnificPopup({
-						delegate: 'a',
-						type: 'image',
-						mainClass: 'mfp-img',
-						tLoading: 'Загрузка изоброжения',
-						gallery: {
-							enabled: true,
-							navigateByImgClick: true,
-							preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-						}
-					});
-
-				})
-			})
-		}
-	}
-	addPdf()
 
 	//menu
 	function menu() {
