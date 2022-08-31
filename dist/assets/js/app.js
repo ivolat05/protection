@@ -49,10 +49,6 @@ $(function () {
 
 	});
 
-
-
-
-
 	//popup close
 	function closePopup(closeBtn) {
 		let popupClose = document.querySelectorAll(`.${closeBtn}`);
@@ -121,7 +117,7 @@ $(function () {
 		let body = document.querySelector('body');
 		let fonBack = document.querySelector('.fon');
 		let menuOpenBtn = document.querySelector('.header-menu-open');
-		let menuBox = document.querySelector('.header-page');
+		let menuBox = document.querySelector('.header-coll');
 		let menuBtnClose = document.querySelectorAll('.--close');
 		if (menuBtnClose && menuBox && menuOpenBtn && fonBack) {
 			menuOpenBtn.addEventListener('click', () => {
